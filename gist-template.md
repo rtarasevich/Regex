@@ -3,8 +3,8 @@
 URL Regular Expression Validator - How to Write & What it's Doing:
 
 ## Summary
-
-Don't you just hate when you type in a website URL incorrectly and it doesn't work? Well, tough. This is why and it isn't asking too much. The developers are using this Regex to match or validate your URL and I think they make a fair point.
+The Regex we will be breaking down is used to match an email. /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ This is what is used to match an email.
+ The developers are using this Regex to match or validate your URL and I think they make a fair point.
 
 See below for the proper syntax for matching or validating any URL:
 
@@ -71,7 +71,9 @@ The [] is a bracket expression and anything inside of it represents a range of c
 The [] is a special character
 
 ### Greedy and Lazy Match
+Using a greedy match is what is typically used by default. In the greedy mode a quantified character is repeated as many times as possible. Meaning it will go through the pattern and backtrack by each letter in the string until it finds what the pattern is matching. Once it finds the last character it is searching for it will stop it's search and return what is inside of the string.
 
+A lazy match is repeated as minimal number of times. This means it will move throught the pattern character by character until it find's its match. In our example we are only using greedy matches.
 
 ## Author
 
